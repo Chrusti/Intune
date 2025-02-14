@@ -62,17 +62,17 @@ function Write-LogEntry {
 }
 
 # The language we want as new default. Language tag can be found here: https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/available-language-packs-for-windows?view=windows-11#language-packs
-$LPlanguage = "fi-FI"
+$LPlanguage = "de-CH"
 
 #Region Initialisations
 $LogFileName = "Invoke-ChangeDefaultLanguage-$LPlanguage.log"
 
 # As In some countries the input locale might differ from the installed language pack language, we use a separate input local variable.
 # A list of input locales can be found here: https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs?view=windows-11#input-locales
-$InputlocaleRegion = "fi-FI"
+$InputlocaleRegion = "de-CH"
 
 # Geographical ID we want to set. GeoID can be found here: https://learn.microsoft.com/en-us/windows/win32/intl/table-of-geographical-locations
-$geoId = "77"
+$geoId = "223"
 
 #Install language pack and change the language of the OS on different places
 #Install an additional language pack including FODs. With CopyToSettings (optional), this will change language for non-Unicode program. 
