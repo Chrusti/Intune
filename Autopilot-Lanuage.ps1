@@ -1,4 +1,3 @@
-#Original script from https://www.inthecloud247.com/install-an-additional-language-pack-on-windows-11-during-autopilot-enrollment/
 #This script need to run as System Context and as 64bit PowerShell
 
 <#
